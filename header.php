@@ -55,7 +55,7 @@ if(empty($_SESSION)){
         echo("<a class='btn btn-outline-success' href='logout.php'>Logout</a>
       </form>");
         
-      var_dump($_SESSION["role"]);
+      //var_dump($_SESSION["role"]);
       }
       ?>
 

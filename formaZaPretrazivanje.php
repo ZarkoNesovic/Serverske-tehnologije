@@ -48,7 +48,9 @@ if(empty($_SESSION)){
 <div class="container">
 <p id="showData"></p>
 </div>
-    
+    <?php if($_SESSION["role"]=="admin"){
+  echo("<a href='formaZaEdit.php'>Edit</a>");  
+} ?>
       <?php include_once "footer.html"; ?>
       <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
 </body>

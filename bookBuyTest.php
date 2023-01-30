@@ -1,6 +1,10 @@
 <?php  
 include_once "functions.php";
 //TODO Stilizacija ove stranice je neophodna
+session_start();
+if($_SESSION["role"]=="admin"){
+
+}
 
 if($_GET["id"]){
 //echo $_GET["id"];
@@ -19,6 +23,9 @@ echo "Cestitamo uspesno ste kupili knjigu";
 </head>
 <body>
     <a href="formaZaPretrazivanje.php">Pretrazuj dalje</a>
+    <?php
+    
+?>
 </body>
 </html>
 

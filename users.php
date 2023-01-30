@@ -20,7 +20,7 @@ session_start();
 <body>
 <?php include_once "header.php"; ?>
 <div class="container">
-    <table class='table table-striped'>
+<table class='table table-striped'>
         <thead>
 <tr>
     <th>id</th>

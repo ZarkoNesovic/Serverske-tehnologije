@@ -19,6 +19,7 @@ echo "error";
         $stmt->bind_param("sss", $username,$email,$role);
         //echo $stmt;
         $stmt->execute();
+        //var_dump($_POST);
     }
     else{
         $sqlQuery="UPDATE users SET username=?,email=?,role=?,password=? WHERE id="."'".$id."'";

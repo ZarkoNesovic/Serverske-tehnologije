@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 include_once 'dbConnection.php';
 //echo $_GET['id'];
@@ -23,7 +23,7 @@ $user=$result->fetch_assoc();
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 </head>
 <body>
-    <?php include_once "header.html"; ?>
+    <?php include_once "header.php"; ?>
 
 <div class="container">
     <form action="editUser.php" method="POST">

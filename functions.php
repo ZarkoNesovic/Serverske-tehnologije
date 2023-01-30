@@ -42,7 +42,7 @@ $genreIn="genre IN(".$genreIn.")";
   //var_dump($genre);
 
 
-
+//TODO Ako ima vremena ispraviti upit umesto * upisati kolone po zeljenom redosledu
 if(!empty($genreIn)||!empty($authorStrSql)||!empty($titleStrSql)){
     $sqlQuery="SELECT * FROM books WHERE ".$genreIn.$authorStrSql.$titleStrSql."ORDER BY genre";
     $result = $conn->query($sqlQuery);
